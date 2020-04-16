@@ -187,3 +187,7 @@ Creating a Todo application, view its own README.md
     - Link does something similar to e.preventDefault() when on clicking.
     - React-router-dom injects some properties about location into props, for those components within Route tag.
         - It is possible to inject the props using a HighOrderComponent withRouter.
+
+## 28
+
+Higher Order Component, adds functionality to components, returning a supercharged component.
