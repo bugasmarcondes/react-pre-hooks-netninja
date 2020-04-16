@@ -3,14 +3,14 @@ import React from "react";
 function Todos({ todos, deleteTodo }) {
   const todoList = todos.length ? (
     todos.map((todo) => (
-      <div className="collection-item" key={todo.id}>
-        <span
-          onClick={() => {
-            deleteTodo(todo.id);
-          }}
-        >
-          {todo.content}
-        </span>
+      <div
+        className="collection-item item-clickable"
+        key={todo.id}
+        onClick={() => {
+          deleteTodo(todo.id);
+        }}
+      >
+        <span>{todo.content}</span>
       </div>
     ))
   ) : (
