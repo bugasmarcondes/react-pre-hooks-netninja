@@ -175,6 +175,15 @@ https://blog.pusher.com/css-modules-react/
     3. Unmounting
         1. componentWillUnmount
 
-## 23
+## 23 and 24
 
 Creating a Todo application, view its own README.md
+
+## 25, 26 and 27
+
+- React router, intercepts requests and respond with the appropriate component. So it avoids requests to the server.
+- Creating poketimes application. View its own README.md
+- yarn add react-router-dom
+    - Link does something similar to e.preventDefault() when on clicking.
+    - React-router-dom injects some properties about location into props, for those components within Route tag.
+        - It is possible to inject the props using a HighOrderComponent withRouter.
