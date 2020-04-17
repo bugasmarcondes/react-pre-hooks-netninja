@@ -295,3 +295,7 @@ Blog detail page, retrieving data for a specific post from the store
     - comes after mapStateToProps
 
 Implementing deletePost action
+
+## 43
+
+Action creators
