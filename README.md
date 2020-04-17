@@ -213,3 +213,58 @@ Using </Switch> tag to load only one component from the route list
 ## 33
 
 Importing images
+
+# Redux
+
+## 34
+
+Redux is a state management library, which utilizes a central store for all app data, and any component can access it.
+
+## 35
+
+- Store, data and state
+- Reducer, is the one who updates the store, based on the action that is passed
+- The component dispatches an action to the reducer
+
+## 36, 37 and 38
+
+<pre><code>const { createStore } = Redux;
+
+const initState = {
+    todos: [],
+    posts: []
+}
+
+//2. creates a reducer to manipulate state
+function myReducer(state = initState, action) {
+    if (action.type == 'ADD_TODO') {
+        return {
+            ...state,
+            todos: [...state.todos, action.todo]
+        }
+    }
+
+    if (action.type == 'ADD_POST') {
+        return {
+            ...state,
+            posts: [...state.posts, action.post]
+        }
+    }
+}
+
+//1. creates the store
+const store = createStore(myReducer);
+
+//4. subscribe, simulating what a component would do
+store.subscribe(() => {
+    console.log('state updated');
+    console.log(store.getState());
+})
+
+//3. creates and dispatches an action
+//const todoAction = { type: 'ADD_TODO', todo: 'buy milk' };
+//store.dispatch(todoAction);
+store.dispatch({ type: 'ADD_TODO', todo: 'buy milk' });
+store.dispatch({ type: 'ADD_TODO', todo: 'sleep some more' });
+store.dispatch({ type: 'ADD_POST', post: 'egg hunt with Yoshi' });
+</code></pre>
