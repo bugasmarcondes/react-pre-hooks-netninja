@@ -209,3 +209,7 @@ Creating route to load post content
 ## 32
 
 Using </Switch> tag to load only one component from the route list
+
+## 33
+
+Importing images
