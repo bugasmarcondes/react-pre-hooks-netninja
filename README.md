@@ -278,3 +278,7 @@ store.dispatch({ type: 'ADD_POST', post: 'egg hunt with Yoshi' });
 
 1. index.js
 2. /src/reducers
+
+## 40
+
+Mapping state to props
