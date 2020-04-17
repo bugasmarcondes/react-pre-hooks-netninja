@@ -1,5 +1,7 @@
 # React
 
+- If React state changes in the parent component, every single sub component would re-render by default.
+
 ## 1
 
 - React, js library created by Facebook used to create dynamic web apps.
@@ -286,3 +288,10 @@ Mapping state to props
 ## 41
 
 Blog detail page, retrieving data for a specific post from the store
+
+## 42
+
+- mapDispatchToProps
+    - comes after mapStateToProps
+
+Implementing deletePost action
