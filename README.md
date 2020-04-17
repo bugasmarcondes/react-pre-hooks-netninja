@@ -282,3 +282,7 @@ store.dispatch({ type: 'ADD_POST', post: 'egg hunt with Yoshi' });
 ## 40
 
 Mapping state to props
+
+## 41
+
+Blog detail page, retrieving data for a specific post from the store
