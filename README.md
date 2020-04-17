@@ -197,3 +197,15 @@ Higher Order Component, adds functionality to components, returning a supercharg
 yarn add axios
 
 https://jsonplaceholder.typicode.com/
+
+## 30
+
+Route parameters
+
+## 31
+
+Creating route to load post content
+
+## 32
+
+Using </Switch> tag to load only one component from the route list
