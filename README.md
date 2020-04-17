@@ -268,3 +268,13 @@ store.dispatch({ type: 'ADD_TODO', todo: 'buy milk' });
 store.dispatch({ type: 'ADD_TODO', todo: 'sleep some more' });
 store.dispatch({ type: 'ADD_POST', post: 'egg hunt with Yoshi' });
 </code></pre>
+
+## 39
+
+- yarn add redux
+    - allow us to create the store
+- yarn add react-redux
+    - allow us to interact with Redux from our React components
+
+1. index.js
+2. /src/reducers
